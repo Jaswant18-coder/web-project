@@ -78,8 +78,8 @@ def _upsert_cache(movies):
             tmdb_id=movie_id,
             defaults={
                 'title': movie.get('title', ''),
-                'poster_path': movie.get('poster_path', ''),
-                'backdrop_path': movie.get('backdrop_path', ''),
+                'poster_path': movie.get('poster_path') or '',
+                'backdrop_path': movie.get('backdrop_path') or '',
                 'overview': movie.get('overview', ''),
                 'release_date': movie.get('release_date') or None,
                 'genres': movie.get('genres', []),
