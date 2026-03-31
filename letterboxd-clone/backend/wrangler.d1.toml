@@ -1,8 +1,0 @@
-name = "letterboxd-d1"
-compatibility_date = "2024-01-01"
-
-[[d1_databases]]
-binding = "DB"
-database_name = "letterboxd-db"
-database_id = "f5b8f454-ef0a-4d42-a179-90ccc259d573"
-preview_database_id = "f5b8f454-ef0a-4d42-a179-90ccc259d573"
