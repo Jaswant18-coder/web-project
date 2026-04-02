@@ -6,7 +6,7 @@ const Login = () => {
     <div className="container mx-auto px-4 py-12">
       <div className="max-w-md mx-auto">
         <div className="card p-8">
-          <h1 className="text-3xl font-bold text-white mb-2">Welcome Back</h1>
+          <h1 className="text-3xl font-bold text-text-primary mb-2">Welcome Back</h1>
           <p className="text-text-secondary mb-8">
             Login to continue tracking and reviewing movies
           </p>

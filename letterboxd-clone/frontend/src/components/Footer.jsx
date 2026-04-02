@@ -5,7 +5,7 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="mb-4 md:mb-0">
             <p className="text-text-secondary text-sm">
-              © 2024 Letterboxd Clone. Built with React & Django.
+              ©BUILT BY SAM AND ABILASH
             </p>
           </div>
           <div className="flex space-x-6">
@@ -13,7 +13,7 @@ const Footer = () => {
               href="https://www.themoviedb.org/"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-text-secondary hover:text-white text-sm transition-colors"
+              className="text-text-secondary hover:text-text-primary text-sm transition-colors"
             >
               Powered by TMDb
             </a>

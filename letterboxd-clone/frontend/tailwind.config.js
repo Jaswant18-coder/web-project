@@ -3,23 +3,24 @@ export default {
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
+  darkMode: 'class', // Enable manual dark mode via class
   theme: {
     extend: {
       colors: {
         primary: {
-          dark: '#14181c',
-          darker: '#1c2026',
-          light: '#2c3440',
+          dark: 'var(--color-primary-dark)',
+          darker: 'var(--color-primary-darker)',
+          light: 'var(--color-primary-light)',
         },
         accent: {
-          green: '#00c030',
-          orange: '#ff8000',
-          blue: '#40bcf4',
+          green: 'var(--color-accent-green)',
+          orange: 'var(--color-accent-orange)',
+          blue: 'var(--color-accent-blue)',
         },
         text: {
-          primary: '#ffffff',
-          secondary: '#9ab',
-          muted: '#678',
+          primary: 'var(--color-text-primary)',
+          secondary: 'var(--color-text-secondary)',
+          muted: 'var(--color-text-muted)',
         }
       },
       fontFamily: {

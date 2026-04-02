@@ -63,13 +63,13 @@ const Home = () => {
   return (
     <div className="container mx-auto px-4 py-8">
       {debugError && (
-        <div className="bg-red-500 text-white p-4 mb-8 rounded">
+        <div className="bg-red-500 text-[#ffffff] p-4 mb-8 rounded">
           <h2 className="font-bold">Error Loading Data:</h2>
           <p>{debugError}</p>
         </div>
       )}
       <div className="mb-12">
-        <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
+        <h1 className="text-4xl md:text-5xl font-bold text-text-primary mb-4">
           Track films you've watched.
           <br />
           Save those you want to see.
@@ -85,7 +85,7 @@ const Home = () => {
 
       {trending.length > 0 && (
         <section className="mb-12">
-          <h2 className="text-2xl font-bold text-white mb-6">Trending This Week</h2>
+          <h2 className="text-2xl font-bold text-text-primary mb-6">Trending This Week</h2>
           <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8 gap-4">
             {trending.map((movie) => (
               <MovieCard key={movie.id} movie={movie} />
@@ -96,7 +96,7 @@ const Home = () => {
 
       {user && recommendations.length > 0 && (
         <section className="mb-12">
-          <h2 className="text-2xl font-bold text-white mb-6">Recommended For You</h2>
+          <h2 className="text-2xl font-bold text-text-primary mb-6">Recommended For You</h2>
           <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8 gap-4">
             {recommendations.map((movie) => (
               <MovieCard key={movie.id} movie={movie} />
@@ -107,7 +107,7 @@ const Home = () => {
 
       {popular.length > 0 && (
         <section className="mb-12">
-          <h2 className="text-2xl font-bold text-white mb-6">Popular Movies</h2>
+          <h2 className="text-2xl font-bold text-text-primary mb-6">Popular Movies</h2>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-4">
             {popular.map((movie) => (
               <MovieCard key={movie.id} movie={movie} />

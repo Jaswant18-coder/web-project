@@ -37,7 +37,7 @@ const MovieCard = ({ movie }) => {
           </div>
         </div>
         <div className="p-4">
-          <h3 className="font-semibold text-white truncate group-hover:text-accent-green transition-colors">
+          <h3 className="font-semibold text-text-primary truncate group-hover:text-accent-green transition-colors">
             {movie.title}
           </h3>
           <p className="text-sm text-text-secondary">{releaseYear}</p>

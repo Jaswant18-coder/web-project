@@ -167,7 +167,7 @@ const MovieDetail = () => {
               className="w-48 h-72 object-cover rounded-lg shadow-2xl"
             />
             <div className="pb-4">
-              <h1 className="text-4xl md:text-5xl font-bold text-white mb-2">
+              <h1 className="text-4xl md:text-5xl font-bold text-text-primary mb-2">
                 {movie.title}
               </h1>
               <div className="flex items-center space-x-4 text-text-secondary">
@@ -191,13 +191,13 @@ const MovieDetail = () => {
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-12">
           <div className="lg:col-span-2">
             <div className="mb-8">
-              <h2 className="text-2xl font-bold text-white mb-4">Overview</h2>
+              <h2 className="text-2xl font-bold text-text-primary mb-4">Overview</h2>
               <p className="text-text-secondary leading-relaxed">{movie.overview}</p>
             </div>
 
             {movie.genres && movie.genres.length > 0 && (
               <div className="mb-8">
-                <h2 className="text-2xl font-bold text-white mb-4">Genres</h2>
+                <h2 className="text-2xl font-bold text-text-primary mb-4">Genres</h2>
                 <div className="flex flex-wrap gap-2">
                   {movie.genres.map((genre) => (
                     <span
@@ -214,7 +214,7 @@ const MovieDetail = () => {
 
           <div>
             <div className="card p-6">
-              <h3 className="text-xl font-bold text-white mb-4">Actions</h3>
+              <h3 className="text-xl font-bold text-text-primary mb-4">Actions</h3>
               {user ? (
                 <div className="space-y-3">
                   <button
@@ -249,7 +249,7 @@ const MovieDetail = () => {
         {showReviewForm && user && (
           <div className="mb-12">
             <div className="card p-6">
-              <h2 className="text-2xl font-bold text-white mb-6">
+              <h2 className="text-2xl font-bold text-text-primary mb-6">
                 {userReview ? 'Edit Your Review' : 'Write a Review'}
               </h2>
               <ReviewForm
@@ -262,7 +262,7 @@ const MovieDetail = () => {
         )}
 
         <div className="mb-12">
-          <h2 className="text-2xl font-bold text-white mb-6">
+          <h2 className="text-2xl font-bold text-text-primary mb-6">
             Reviews ({reviews.length})
           </h2>
           {reviews.length > 0 ? (
@@ -286,7 +286,7 @@ const MovieDetail = () => {
 
         {similarMovies.length > 0 && (
           <div>
-            <h2 className="text-2xl font-bold text-white mb-6">Similar Movies</h2>
+            <h2 className="text-2xl font-bold text-text-primary mb-6">Similar Movies</h2>
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
               {similarMovies.map((movie) => (
                 <MovieCard key={movie.id} movie={movie} />

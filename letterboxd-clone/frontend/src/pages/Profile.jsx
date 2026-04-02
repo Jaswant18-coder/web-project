@@ -133,7 +133,7 @@ const Profile = () => {
             </span>
           </div>
           <div>
-            <h1 className="text-4xl font-bold text-white mb-2">{profile.username}</h1>
+            <h1 className="text-4xl font-bold text-text-primary mb-2">{profile.username}</h1>
             <p className="text-text-secondary">
               Member since {new Date(profile.created_at).toLocaleDateString('en-US', { year: 'numeric', month: 'long' })}
             </p>
@@ -146,11 +146,11 @@ const Profile = () => {
 
         <div className="flex space-x-8 mt-6">
           <div>
-            <p className="text-3xl font-bold text-white">{watchedMovies.length}</p>
+            <p className="text-3xl font-bold text-text-primary">{watchedMovies.length}</p>
             <p className="text-text-secondary text-sm">Films Watched</p>
           </div>
           <div>
-            <p className="text-3xl font-bold text-white">{reviews.length}</p>
+            <p className="text-3xl font-bold text-text-primary">{reviews.length}</p>
             <p className="text-text-secondary text-sm">Reviews</p>
           </div>
         </div>
@@ -162,8 +162,8 @@ const Profile = () => {
             onClick={() => setActiveTab('watched')}
             className={`pb-4 px-2 transition-colors ${
               activeTab === 'watched'
-                ? 'text-white border-b-2 border-accent-green'
-                : 'text-text-secondary hover:text-white'
+                ? 'text-text-primary border-b-2 border-accent-green'
+                : 'text-text-secondary hover:text-text-primary'
             }`}
           >
             Watched ({watchedMovies.length})
@@ -172,8 +172,8 @@ const Profile = () => {
             onClick={() => setActiveTab('reviews')}
             className={`pb-4 px-2 transition-colors ${
               activeTab === 'reviews'
-                ? 'text-white border-b-2 border-accent-green'
-                : 'text-text-secondary hover:text-white'
+                ? 'text-text-primary border-b-2 border-accent-green'
+                : 'text-text-secondary hover:text-text-primary'
             }`}
           >
             Reviews ({reviews.length})

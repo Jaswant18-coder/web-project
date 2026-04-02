@@ -39,7 +39,7 @@ const ReviewCard = ({ review, onLike, onUnlike, onDelete }) => {
             </span>
           </div>
           <div>
-            <p className="font-semibold text-white">{review.user.username}</p>
+            <p className="font-semibold text-text-primary">{review.user.username}</p>
             <p className="text-sm text-text-secondary">{formatDate(review.created_at)}</p>
           </div>
         </div>

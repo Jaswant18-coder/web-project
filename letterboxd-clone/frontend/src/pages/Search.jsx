@@ -87,13 +87,13 @@ const Search = () => {
   return (
     <div className="container mx-auto px-4 py-8">
       {debugError && (
-        <div className="bg-red-500 text-white p-4 mb-8 rounded">
+        <div className="bg-red-500 text-[#ffffff] p-4 mb-8 rounded">
           <h2 className="font-bold">Error Loading Data:</h2>
           <p>{debugError}</p>
         </div>
       )}
       <div className="max-w-2xl mx-auto mb-12">
-        <h1 className="text-4xl font-bold text-white mb-8 text-center">Search Movies</h1>
+        <h1 className="text-4xl font-bold text-text-primary mb-8 text-center">Search Movies</h1>
         
         <form onSubmit={handleSubmit} className="flex space-x-4">
           <input

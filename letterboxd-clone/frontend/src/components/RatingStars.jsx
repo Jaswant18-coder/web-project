@@ -45,7 +45,7 @@ const RatingStars = ({ rating, onRatingChange, readonly = false, size = 'medium'
           >
             <svg
               className={`${starSize} ${
-                isFilled ? 'text-yellow-400' : 'text-gray-600'
+                isFilled ? 'text-yellow-400' : 'text-text-muted'
               } transition-colors`}
               fill="currentColor"
               viewBox="0 0 20 20"
